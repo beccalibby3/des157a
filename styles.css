@@ -13,7 +13,6 @@ header {
 
 h1 {
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-variation-settings:
@@ -27,7 +26,6 @@ h1 {
 
 h2 {
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-variation-settings:
@@ -41,7 +39,6 @@ h2 {
 
 li {
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
@@ -62,7 +59,29 @@ li {
     background: #2A7B9B;
     background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
 
+    background-size: 300% 300%;
+    animation: moveGradient 10s ease infinite;
+
+    position:relative;
+
 }
+
+.face {
+  position: absolute;  
+  top: 50px;          
+  right: 50px;         
+  width: 200px;        
+  height: 200px; 
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 .accent-bar {
     width: 60%;
@@ -74,32 +93,31 @@ li {
 }
 
 main {
-    /* creates columns */
-    display: flex;
-    justify-content: space-around;
-
-    padding-bottom: 100px;
-
-    gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch; 
+  gap: 20px;
+  padding-bottom: 100px;
 }
 
 .column {
-    background-color: #fafafa;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  background-color: #fafafa;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
-    border-radius: 10px;
+  transition: background-color 0.5s ease;
+}
 
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
-
+.column:hover {
+  background-color:  #57C785;
 }
 
 footer {
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
@@ -123,16 +141,18 @@ footer {
 
 
 footer a {
-    /* makes the footer color white */
     color: white;
     text-decoration: none;
   }
 
-  .footer-accent {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, #57C785, #EDDD53);
-    border-radius: 50%;
-    margin-bottom: 20px;
-    margin-left: 50px; 
-  }
+
+  .column h2,
+.column ul {
+    margin: 0;
+    padding: 10px;
+}
+
+.column ul li {
+    padding-bottom: 10px;
+    list-style-type: none; 
+}
