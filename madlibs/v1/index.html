@@ -10,103 +10,75 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <!-- linking creepster google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
         
         <!-- linking css file-->
         <link rel="stylesheet" href="styles.css">
-    <title>MadLibs V1</title>
+        <title>MadLibs V1</title>
+        <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Food Service Nightmares</h1>
-        <h2>Fill in the blanks to quit your horrible job</h2>
+        <h2>It's time for your dreaded restaurant shift. Use the tablet to leave a note for your manager.</h2>
     </header>
 
     <main>
-            <form method="post" action="processor.php">
-
-                <div>
-                    <label for="fname">Random Name</label>
-                    <input type="text" id="fname" name="fname">
-                </div>
+        <p class="time">8:55pm</p>
+        <h2 class="clockin">Clock Into Shift (9:00pm-2:00am)</h2>
+            <form id="myform">
 
                 <div>
                     <label for="yname">Your Name</label>
-                    <input type="text" id="yname" name="yname">
+                    <input type="text" id="yname">
                 </div>
 
                 <div>
                     <label for="adj1">Adjective</label>
-                    <input type="text" id="adj1" name="adj1">
+                    <input type="text" id="adj1">
                 </div>
 
                 <div>
                     <label for="adj2">Adjective</label>
-                    <input type="text" id="adj2" name="adj2">
+                    <input type="text" id="adj2">
                 </div>
 
                 <div>
                     <label for="adj3">Adjective</label>
-                    <input type="text" id="adj3" name="adj3">
+                    <input type="text" id="adj3">
                 </div>
 
                 <div>
-                    <label for="adj4">Adjective</label>
-                    <input type="text" id="adj4" name="adj4">
+                    <label for="noun">Noun</label>
+                    <input type="text" id="noun">
                 </div>
 
+    
                 <div>
-                    <label for="adj5">Adjective</label>
-                    <input type="text" id="adj5" name="adj5">
-                </div>
-
-                <div>
-                    <label for="adj6">Adjective</label>
-                    <input type="text" id="adj6" name="adj6">
-                </div>
-
-                <div>
-                    <label for="noun1">Noun</label>
-                    <input type="text" id="noun1" name="noun1">
-                </div>
-
-                <div>
-                    <label for="noun2">Noun</label>
-                    <input type="text" id="noun2" name="noun2">
-                </div>
-
-                <div>
-                    <label for="number1">Number</label>
-                    <input type="text" id="number1" name="number1">
-                </div>
-
-                <div>
-                    <label for="number2">Number</label>
-                    <input type="text" id="number2" name="number2">
-                </div>
-
-                <div>
-                    <label for="verb1">Verb ending in -ing</label>
-                    <input type="text" id="verb1" name="verb1">
-                </div>
-
-                <div>
-                    <label for="verb2">Verb ending in -ing</label>
-                    <input type="text" id="verb2" name="verb2">
+                    <label for="number">Number</label>
+                    <input type="text" id="number">
                 </div>
 
                 <div>
                     <label for="loc">Location</label>
-                    <input type="text" id="loc" name="loc">
+                    <input type="text" id="loc">
                 </div>
 
                 <div>
                     <label for="prof">Profession</label>
-                    <input type="text" id="prof" name="prof">
+                    <input type="text" id="prof">
                 </div>
 
-                <button type="submit">Submit</button>
-
+                <input type="submit" value="Enter a Note" id="note">
             </form>
+            <article id="madlib"></article>
+
+
     </main>
 
     <script>

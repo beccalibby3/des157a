@@ -1,7 +1,108 @@
+
 body {
+  background-image: url("images/room.jpg"); 
+  background-size: cover;                 
+  background-repeat: no-repeat;           
+  background-position: center;           
+}
+
+h1 {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 100px;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: white;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: black;
+}
+
+form {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+    text-align:left;
+    padding:30px;
+
+    font-size: 18px;
 }
+
+
+header {
+  text-align:center;
+  background: linear-gradient(180deg, #2a0000 0%, #5a0000 35%, #b30000 70%, #000000 100%);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding:10px;
+  
+}
+
+main {
+  background: linear-gradient(to bottom, #f5f5f5, #e0e0e0 60%, #d1d1d1);
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 40px;
+  padding: 50px;
+  border: 12px solid black;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: transform 1s ease-in-out; 
+
+  width:600px;
+  height:400px;
+}
+
+main.slide-out {
+  transform: translateX(120vw); 
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgb(65, 65, 65);
+  border: 3px solid #333;
+  border-radius: 50%;
+}
+
+.time {
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: rgb(0, 0, 0);
+}
+
+.clockin {
+  text-align: center;
+    font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: rgb(0, 0, 0);
+
+}
+
