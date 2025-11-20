@@ -33,8 +33,22 @@
     font-size: 32px;
   }
 
+  h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: #1d1d1d;
+  }
+
     /* applying roboto to paragraphs */
 p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #1D1D1D;
+    line-height: 1.6em;
+    font-size: 16px;
+  }
+
+  figcaption {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     color: #1D1D1D;
