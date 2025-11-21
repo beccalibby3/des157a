@@ -1,0 +1,38 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background: white;
+    margin: 0;
+  }
+  
+  /* IMAGE TAKES UP HALF THE SCREEN + STAYS FIXED */
+  .fixed-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50vw;      /* EXACTLY half the screen width */
+    height: 100vh;    /* full height of the screen */
+    object-fit: contain; /* <-- makes the whole image visible */
+    background: white; /* prevents transparency showing behind */
+  }
+  
+  /* TEXT SCROLLS ON THE RIGHT */
+  .text {
+    margin-left: 50vw; /* pushes text to the right half */
+    padding: 40px;
+    max-width: 650px;
+  }
+  
+  h1 {
+    margin-bottom: 80px;
+  }
+  
+  h2 {
+    color: orangered;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  
