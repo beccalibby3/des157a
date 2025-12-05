@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+<!-- linking fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+<!-- linking fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Battle of the Plants</h1>
+    
+    <p class="boxed-text">There are two players. On each turn, the active gardener “rolls the dice” to grow their plant. The total of the roll is added to the gardener’s growth score - unless either die shows a one. If that happens, your plant wilts a bit, your turn ends, and it’s the other gardener’s chance to grow.
+
+    After each roll, the current gardener can choose to keep nurturing their plant and roll again (as long as no “one” sprouted), or they can decide the conditions are getting risky and pass the turn before anything droops.
+        
+    The first gardener to reach 30 growth points or more blossoms into victory.
+    But beware: if you roll two ones—snake eyes—your plant completely withers and your growth score drops back to zero. So tend carefully! 🌿</p>
+
+    <button id="ttsButton" class="tts-button">🔊 Listen</button>
+
+
+    <div id="gamecontrol">
+        <h2>start a game</h2>
+        <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+    </div>
+
+    <div id="game"></div>
+    <div id="actions"></div>
+    <div id="score"></div>
+    
+</body>
+</html>

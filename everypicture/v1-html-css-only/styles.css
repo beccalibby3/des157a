@@ -4,20 +4,20 @@ body {
     margin: 0;
   }
   
-  /* IMAGE TAKES UP HALF THE SCREEN + STAYS FIXED */
+  
   .fixed-image {
     position: fixed;
     top: 0;
     left: 0;
-    width: 50vw;      /* EXACTLY half the screen width */
-    height: 100vh;    /* full height of the screen */
-    object-fit: contain; /* <-- makes the whole image visible */
-    background: white; /* prevents transparency showing behind */
+    width: 50vw;    
+    height: 100vh;   
+    object-fit: contain; 
+    background: white; 
   }
   
-  /* TEXT SCROLLS ON THE RIGHT */
+ 
   .text {
-    margin-left: 50vw; /* pushes text to the right half */
+    margin-left: 50vw; 
     padding: 40px;
     max-width: 650px;
   }
